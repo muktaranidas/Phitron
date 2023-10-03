@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include<stdio.h>
 int main()
 {
     int tk;
@@ -7,7 +7,7 @@ int main()
     {
         printf("Pizza Khabo \n");
     }
-if (tk >= 10000)
+    if (tk >= 10000)
     {
         printf("Tour Dibo");
     }
