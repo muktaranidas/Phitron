@@ -1,1 +1,10 @@
-500000000500000000
+1 - odd
+2 - Even
+3 - odd
+4 - Even
+5 - odd
+6 - Even
+7 - odd
+8 - Even
+9 - odd
+10 - Even
