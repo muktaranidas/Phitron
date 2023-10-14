@@ -13,7 +13,7 @@ int main () {
 
     }
     else{
-        printf("Sajekjabo \n");
+        printf("Sajek jabo \n");
     }
     return 0;
 }
