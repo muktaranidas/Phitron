@@ -14,6 +14,6 @@ int main() {
             neg += num;
         }
     }
-    printf("%d %d\n", pos, neg);
+    printf("%d %d\n", pos , neg);
     return 0;
 }
