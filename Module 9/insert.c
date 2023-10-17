@@ -3,7 +3,7 @@ int main ()
 {
     int n; //5
     scanf("%d" , &n); // input nilam 5
-    int ar[n+1]; // arr er size jodi 5 hoy tobe amra kinto 6ta ghor nibo
+    int ar[n+1]; // 6size er akta arry delcear korlam
     for(int i=0; i<n ; i++){ //loop chalailam, 5ta value 
         scanf("%d" , &ar[i]); //5ta value input nilam
     }
