@@ -15,6 +15,7 @@ int main ()
     // Print
      // char a[5] = {'M', 'u' , 'k' , 't' , 'a'};
     char a[] = "Mukta\0";
+    
     int sz = sizeof(a)/sizeof(char);
     printf("%d\n" , sz);
 
