@@ -1,3 +1,3 @@
-  // for(int i=0; i<strlen(b) ; i++){
-        
-    // }
+if(a[i] == 0){
+            count[a[i]]++;
+        }
