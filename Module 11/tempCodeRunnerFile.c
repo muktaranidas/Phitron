@@ -1,3 +1,3 @@
-if(a[i] == 0){
-            count[a[i]]++;
-        }
+  // int value = a[i];
+        // printf("%d" , value);
+        // count[value]++;
