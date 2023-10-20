@@ -11,9 +11,6 @@ int main ()
     int count[7]={0};
     for(int i=0;i<n; i++){
         count[a[i]]++;
-
-
-
         // if(a[i] == 0){
         //     count[a[i]]++;
         // }
