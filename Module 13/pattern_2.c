@@ -1,10 +1,32 @@
+// #include<stdio.h>
+// int main ()
+// {
+//     int n,s,k;
+//     scanf("%d" , &n);
+//     s=n-1;
+//     k=1;
+//     for(int i=1; i<=n; i++){
+//         //Line start
+//         for(int j=1; j<=s; j++){
+//             printf(" ");
+//         }
+//         for(int j=1; j<=k; j++){
+//             printf("*");
+//         }
+//         //Line end
+//         s--;
+//         k=k+2;
+//         printf("\n");
+//     }
+//     return 0;
+// }
+
 #include<stdio.h>
 int main ()
 {
-    int n,s,k;
+    int n,s=0,k;
     scanf("%d" , &n);
-    s=n-1;
-    k=1;
+    k=2*n-1;
     for(int i=1; i<=n; i++){
         //Line start
         for(int j=1; j<=s; j++){
@@ -14,8 +36,8 @@ int main ()
             printf("*");
         }
         //Line end
-        s--;
-        k=k+2;
+        s++;
+        k=k-2;
         printf("\n");
     }
     return 0;
