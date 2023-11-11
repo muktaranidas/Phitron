@@ -16,5 +16,6 @@ int main() {
         int result = findMissingNumber(m, a, b, c);
         printf("%d\n", result);
     }
+    
     return 0;
 }
