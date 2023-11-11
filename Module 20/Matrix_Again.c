@@ -1,28 +1,19 @@
 #include <stdio.h>
-
 int main() {
-    int N, M; // Rows and Columns of the matrix
-    scanf("%d %d", &N, &M);
-
+    int n, m; 
+    scanf("%d %d", &n, &m);
     int matrix[100][100];
-
-    // Input matrix
-    for (int i = 0; i < N; i++) {
-        for (int j = 0; j < M; j++) {
+    for (int i = 0; i < n; i++) {
+        for (int j = 0; j < m; j++) {
             scanf("%d", &matrix[i][j]);
         }
     }
-
-    // Print values of the last row
-    for (int j = 0; j < M; j++) {
-        printf("%d ", matrix[N - 1][j]);
+    for (int j = 0; j < m; j++) {
+        printf("%d ", matrix[n - 1][j]);
     }
     printf("\n");
-
-    // Print values of the last column
-    for (int i = 0; i < N; i++) {
-        printf("%d ", matrix[i][M - 1]);
+    for (int i = 0; i < n; i++) {
+        printf("%d ", matrix[i][m - 1]);
     }
-
     return 0;
 }
