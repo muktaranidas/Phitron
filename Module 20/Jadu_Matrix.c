@@ -1,47 +1,34 @@
 #include <stdio.h>
-
-int isJaduMatrix(int matrix[100][100], int N, int M) {
-    // Check primary diagonal
-    for (int i = 0; i < N; i++) {
+int isJaduMatrix(int matrix[100][100], int n, int m) {
+    for (int i = 0; i < n; i++) {
         if (matrix[i][i] != 1) {
-            return 0; // Not a Jadu Matrix
+            return 0;
         }
     }
-
-    // Check secondary diagonal
-    for (int i = 0; i < N; i++) {
-        if (matrix[i][N - 1 - i] != 1) {
-            return 0; // Not a Jadu Matrix
+    for (int i = 0; i < n; i++) {
+        if (matrix[i][n - 1 - i] != 1) {
+            return 0; 
         }
     }
-
-    // Check rest of the cells
-    for (int i = 0; i < N; i++) {
-        for (int j = 0; j < M; j++) {
-            if ((i != j) && (i + j != N - 1) && matrix[i][j] != 0) {
-                return 0; // Not a Jadu Matrix
+    for (int i = 0; i < n; i++) {
+        for (int j = 0; j < m; j++) {
+            if ((i != j) && (i + j != n - 1) && matrix[i][j] != 0) {
+                return 0; 
             }
         }
     }
-
-    return 1; // Jadu Matrix
+    return 1; 
 }
-
 int main() {
-    int N, M; // Rows and Columns of the matrix
-    scanf("%d %d", &N, &M);
-
+    int n, m; 
+    scanf("%d %d", &n, &m);
     int matrix[100][100];
-
-    // Input matrix
-    for (int i = 0; i < N; i++) {
-        for (int j = 0; j < M; j++) {
+    for (int i = 0; i < n; i++) {
+        for (int j = 0; j < m; j++) {
             scanf("%d", &matrix[i][j]);
         }
     }
-
-    // Check if it's a Jadu Matrix and print the result
-    if (isJaduMatrix(matrix, N, M)) {
+    if (isJaduMatrix(matrix, n, m)) {
         printf("YES\n");
     } else {
         printf("NO\n");
