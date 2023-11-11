@@ -1,47 +1,44 @@
 #include <stdio.h>
-
-void printSpaces(int spaces) {
-    for (int i = 0; i < spaces; i++) {
-        printf(" ");
+void printChristmasTree(int N)
+{
+    int line = (N + 1) / 2 + 5;
+    int star = 1;
+    int space = line - 1;
+    // Print the upper part of the tree
+    for (int i = 0; i < line; i++)
+    {
+        for (int j = 0; j < space; j++)
+        {
+            printf(" ");
+        }
+        for (int j = 0; j < star; j++)
+        {
+            printf("*");
+        }
+        printf("\n");
+        star += 2;
+        space--;
     }
-}
-
-void printStars(int stars) {
-    for (int i = 0; i < stars; i++) {
-        printf("*");
-    }
-}
-
-void printTree(int n) {
-    // Print the top part of the tree
-    for (int i = 1; i <= n; i += 2) {
-        printSpaces((n - i) / 2);
-        printStars(i);
+    // Print the lower part of the tree
+    int baseSpace = ((line * 2) - 1 - N) / 2;
+    for (int i = 0; i < 5; i++)
+    {
+        for (int j = 0; j < baseSpace; j++)
+        {
+            printf(" ");
+        }
+        for (int j = 0; j < N; j++)
+        {
+            printf("*");
+        }
         printf("\n");
     }
-
-    // Print the bottom part of the tree
-    for (int i = 0; i < 3; i++) {
-        printSpaces((n - 1) / 2);
-        printf("*\n");
-    }
 }
-
-int main() {
-    int N;
-
-    // Read input
-    // printf("Enter the size of the tree (N, where N is odd): ");
-    scanf("%d", &N);
-
-    // Check if N is odd
-    if (N % 2 == 0 || N < 1 || N > 21) {
-        printf("Invalid input! N should be odd and between 1 and 21.\n");
-        return 1;
-    }
-
-    // Print the Christmas tree
-    printTree(N);
-
+int main()
+{
+    int a;
+    scanf("%d", &a);
+    // Sample Input 1
+    printChristmasTree(a);
     return 0;
 }
